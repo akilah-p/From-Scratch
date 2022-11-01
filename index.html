@@ -26,42 +26,39 @@
 
 <body>
     <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Find Kuchi Kopi</h1>
-    </header>
-
-    <main>
-        <section class="shells">
-    
-        
-        <div class="shell">
-            <img src="assets/Gene_Belcher.png" id="img-1"/>
-            <img src="assets/spatula.png" class="ball"/>
-            <button id="button-1">It's me</button>
-        </div>
-        <div class="shell">
-            <img src="assets/Louise_render.png" id="img-2"/>
-            <img src="assets/spatula.png" class="ball"/>
-            <button id="button-2">Actually, it's me!</button>
-            </div>
-            <div class="shell" >
-            <img src="assets/Tina2.png" id="img-3"/>
-                <img src="assets/spatula.png" class="ball"/>
-                <button id="button-3"> Uhh... Me</button>
-            </div>
-            </section>
-
-            <section class="results">
-                <ul>
-            <li class="result">Wins:  <span id="wins"> 0</span></li>
-            <li class="result"> Losses: <span id="losses"> 0</span></li>
-            <li class="result"> Total: <span id= "total"> 0</span></li>
-       </ul>
        
             
-</section>
+            <h1>Where is Louise?</h1>
+        </div>
+    </header>
+    <main>
+        <section class="shells">
+            <div class="shell" id="shell-1">
+                <img id="img-1" src="assets/kk.jpg"/>
+                <img src="assets/Louise_render.png" class="ball"/>
+                <button id="button-1"> It's here</button>
+            </div>
+            <div class="shell" id="shell-2">
+                <img id="img-2" src="assets/kk.jpg"/>
+                <img src="assets/Louise_render.png" class="ball"/>
+                <button id="button-2"> Check here</button>
+            </div>
+            <div class="shell" id="shell-3">
+                <img id="img-3" src="assets/kk.jpg">
+                <img src="assets/Louise_render.png" class="ball"/>
+                <button id="button-3">Over here</button>
+            </div>
+        </section>
+        <section class="results"><ul>
+           <li> <div class="result">Wins: <span id="wins">0</span></div></li>
+           <li> <div class="result">Losses: <span id="losses">0</span></div></li>
+           <li> <div class="result">Total: <span id="total">0</span></div> </li>
+        </ul>
+        </section>
     </main>
+    <footer></footer>
 
+    <script type="module" src="./app.js"></script>
 </body>
 
 </html>
