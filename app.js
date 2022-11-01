@@ -1,7 +1,7 @@
 /* Imports */
 const img1 = document.getElementById('img-1');
 const img2 = document.querySelector('#img-2');
-const img3 = document.querySelector('#img-3');\
+const img3 = document.querySelector('#img-3');
 
 const button1 = document.getElementById('button-1');
 const button2 = document.getElementById('button-2');

@@ -1,41 +1,132 @@
-:root {
-    --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
-    --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
-        'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
-}
-
 body {
-    font-family: var(--primary-font);
-    background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr;
-}
+    /* feel free to update these css variables for a quick theme */
 
-header {
-    position: sticky;
-    top: 0;
-    padding: 15px;
-    height: 80px;
+    --color1: white;
+    --color2: white;
+    --color3: white;
+    --color4: white;
+    --color5: white;
 
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
 
-    background-color: var(--header-background);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
+    /* --color1: hsla(349, 69%, 76%, 1);
+    --color2: hsla(207, 67%, 44%, 1);
+    --color3: hsla(200, 61%, 56%, 1);
+    --color4: hsla(187, 41%, 94%, 1);
+    --color5: hsla(170, 28%, 95%, 1); */
 
-header .logo {
-    height: 100%;
+    /* --color1: hsla(45, 86%, 83%, 1);
+    --color2: hsla(135, 65%, 98%, 1);
+    --color3: hsla(315, 37%, 86%, 1);
+    --color4: hsla(45, 73%, 98%, 1);
+    --color5: hsla(224, 40%, 79%, 1); */
+
+    --header-height: 80px;
+    --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
+    --gutter: 30px;
+    --footer-height: 25px;
+
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(251, 180, 191);
 }
 
 main {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--footer-height));
 }
 
-.shells { flex-direction:row;
-    display:flex;
-
+section {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+    margin-top: var(--gutter);
+    margin-bottom: var(--gutter);
 }
 
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.gutter-right {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+header img {
+    height: var(--header-height);
+}
+
+p {
+    margin: var(--gutter);
+}
+
+img {
+    max-width: 200px;
+    padding-right: 1rem;
+}
+
+.stat {
+    padding-right: 5rem;
+}
+
+button {
+    margin-right: 2rem;
+}
+
+.shells {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.shell {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    gap: 20px;
+}
+.reveal {
+    transform: translateY(-100px);
+}
+/* 
+.shell.reveal img {
+    transform: translateY(-100px);
+} */
+
+.shell img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    z-index: 20;
+}
+
+.ball {
+    z-index: 10;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(245, 233, 220);
+    border-radius: 50%;
+    box-shadow: 5px -2px 5px rgba(113, 112, 112, 0.6);
+    margin: 10px;
+    top: 70px;
+}
+
+.stat {
+    padding-right: 5rem;
+}
+
+button {
+    margin-right: 2rem;
+}
