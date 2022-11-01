@@ -33,3 +33,9 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.shells { flex-direction:row;
+    display:flex;
+
+}
+
