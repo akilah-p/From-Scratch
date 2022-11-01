@@ -13,14 +13,14 @@ const lossesEl = document.getElementById('losses');
 const totalEl = document.getElementById('total');
 
 /* State */
-let wins =0;
+let wins = 0;
 let total = 0;
 
 /* Events */
 button1.addEventListener('click', () => {
     total++;
     resetShells();
-    const ballLocation = Math.ceil(Math.random()* 3);
+    const ballLocation = Math.ceil(Math.random() * 3);
     if (ballLocation === 1) {
         wins++;
         img1.classList.add('reveal');
@@ -36,7 +36,7 @@ button1.addEventListener('click', () => {
 button2.addEventListener('click', () => {
     total++;
     resetShells();
-    const ballLocation = Math.ceil(Math.random()* 3);
+    const ballLocation = Math.ceil(Math.random() * 3);
     if (ballLocation === 1) {
         wins++;
         img1.classList.add('reveal');
@@ -52,7 +52,7 @@ button2.addEventListener('click', () => {
 button3.addEventListener('click', () => {
     total++;
     resetShells();
-    const ballLocation = Math.ceil(Math.random()* 3);
+    const ballLocation = Math.ceil(Math.random() * 3);
     if (ballLocation === 1) {
         wins++;
         img1.classList.add('reveal');
