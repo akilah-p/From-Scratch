@@ -1,7 +1,7 @@
 /* Imports */
-const img1 = document.querySelector('#img-1');
-const img2 = document.querySelector('#img-2');
-const img3 = document.querySelector('#img-3');
+const img1 = document.getElementById('img-1');
+const img2 = document.getElementById('img-2');
+const img3 = document.getElementById('img-3');
 
 const button1 = document.getElementById('button-1');
 const button2 = document.getElementById('button-2');
@@ -24,8 +24,8 @@ button1.addEventListener('click', () => {
     resetShells();
     const ballLocation = Math.ceil(Math.random() * 3);
     if (ballLocation === 1) {
-        wins++;
         img1.classList.add('reveal');
+        wins++;
         
     } else if (ballLocation === 2) {
         img2.classList.add('reveal');
