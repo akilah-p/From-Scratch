@@ -27,13 +27,54 @@
 <body>
     <header>
         <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
+        <h1>Where is Louise?</h1>
+
     </header>
-
     <main>
+        <section class="shells">
+            <div class="shell" id="shell-1">
+                <img id="img-1" src="assets/kk.jpg" />
+                <img src="assets/Louise_render.png" id="ball" />
+                <button id="button-1"> It's here</button>
+            </div>
+            <div class="shell" id="shell-2">
+                <img id="img-2" src="assets/kk.jpg" />
+                <img src="assets/Louise_render.png" id="ball" />
+                <button id="button-2"> Here!</button>
+            </div>
+            <div class="shell" id="shell-3">
+                <img id="img-3" src="assets/kk.jpg">
+                <img src="assets/Louise_render.png" id="ball" />
+                <button id="button-3">Over here</button>
+            </div>
 
+            <div class="results">
+                <ul>
+                    <li>
+                        <div class="result">Wins: <span id="wins"> 0</span></div>
+                    </li>
+                    <li>
+                        <div class="result">Losses: <span id="losses"> 0</span></div>
+                    </li>
+                    <li>
+                        <div class="result">Total: <span id="total"> 0</span></div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+
+        <section>
+            <audio controls autoplay>
+                <source src="assets/Bob-Burgers-Theme-Song.mp3" type="audio/mpeg">
+                Your browser doesn't support the audio element.
+            </audio>
+        </section>
     </main>
+    <footer></footer>
 
+    <script type="module" src="./app.js"></script>
 </body>
 
 </html>
