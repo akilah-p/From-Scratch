@@ -12,6 +12,7 @@ const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
 const totalEl = document.getElementById('total');
 
+
 /* State */
 let wins = 0;
 let total = 0;
@@ -26,7 +27,7 @@ button1.addEventListener('click', () => {
     if (ballLocation === 1) {
         img1.classList.add('reveal');
         wins++;
-        
+
     } else if (ballLocation === 2) {
         img2.classList.add('reveal');
     } else {
@@ -40,9 +41,9 @@ button2.addEventListener('click', () => {
     resetShells();
     const ballLocation = Math.ceil(Math.random() * 3);
     if (ballLocation === 1) {
-       
+
         img1.classList.add('reveal');
-        
+
     } else if (ballLocation === 2) {
         img2.classList.add('reveal');
         wins++;
@@ -57,9 +58,9 @@ button3.addEventListener('click', () => {
     resetShells();
     const ballLocation = Math.ceil(Math.random() * 3);
     if (ballLocation === 1) {
-       
+
         img1.classList.add('reveal');
-        
+
     } else if (ballLocation === 2) {
         img2.classList.add('reveal');
     } else {
@@ -84,6 +85,9 @@ function displayResults() {
     lossesEl.textContent = total - wins;
     totalEl.textContent = total;
 }
+
+
+
 
 
 

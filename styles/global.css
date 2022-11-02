@@ -1,19 +1,20 @@
 body {
     /* feel free to update these css variables for a quick theme */
-background-image: url("/assets/EXTERIOR.jpg");
-background-repeat: repeat;
-background-size: auto;
+    background-image: url("/assets/EXTERIOR.jpg");
+    background-repeat: repeat;
+    background-size: auto;
 
 
 
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
-    --gutter: 30px;
+    --gutter: 10px;
     --footer-height: 25px;
 
     font-family: 'Titillium Web', sans-serif;
     background-color: rgb(251, 180, 191);
 }
+
 
 main {
     display: flex;
@@ -35,10 +36,22 @@ section {
     margin-bottom: var(--gutter);
 }
 
-h1 {
+header {
     font-size: 1.8rem;
     font-weight: bold;
-    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+
+h1 {
+    border-style: solid;
+    border-color: limegreen;
+    border-width: 10px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+
 }
 
 .gutter-right {
@@ -62,15 +75,11 @@ p {
 
 
 
-button {
-    margin-right: 2rem;
-}
-
 .shells {
     margin-top: 40px;
     display: flex;
     flex-direction: row;
-    
+
 
 }
 
@@ -82,65 +91,75 @@ button {
     justify-content: flex-end;
     position: relative;
     gap: 30px;
-    margin:100px;
+    margin: 100px;
 }
+
 .reveal {
-    transform: translateY(-210px);
+    transform: translateY(-300px);
 }
 
 .shell.reveal img {
-    transform: translateY(-210px);
-} 
+    transform: translateY(-300px);
+}
 
 .shell img {
-    width:100%;
+    width: 100%;
     transition: transform 0.5s ease-in-out;
     z-index: 30;
-    border-radius:50%;
+    border-radius: 50%;
     /* position: relative; */
 }
 
-#ball { 
-/* margin-bottom:200px;  */
-position: absolute;
-bottom: 75px;
-z-index: 20;
-/* height: 50%;
+#ball {
+    /* margin-bottom:200px;  */
+    position: absolute;
+    bottom: 75px;
+    z-index: 20;
+    /* height: 50%;
 width: 50%; */
 
 }
 
 .results {
-    /* padding-right: 5rem; */
+    padding-right: 5rem;
     font-size: 50px;
-    font-weight:bolder;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:white;
-     margin-top:100px; 
-     bottom: 400px; 
-} 
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-style: solid;
+    border-color: limegreen;
+    border-width: 10px;
+    color: white;
+    background-color: black;
+    /* width: fit-content; */
+
+
+}
 
 button {
     margin-right: 2rem;
     border-radius: 8px;
-    color:hotpink;
-    background-color:black;
+    color: hotpink;
+    background-color: black;
     padding: 12px 28px;
     font-size: large;
-    font-weight:bold;
+    font-weight: bold;
+    margin-right: 2rem;
+
 }
 
 #img-1 {
-    width:175%;
+    width: 175%;
     height: 175%;
 
 }
 
 #img-2 {
-    width:175%;
+    width: 175%;
     height: 175%;
 }
+
 #img-3 {
-    width:175%;
+    width: 175%;
     height: 175%;
 }
